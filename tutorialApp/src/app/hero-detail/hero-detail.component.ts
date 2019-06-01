@@ -10,7 +10,6 @@ import { HEROES } from '../mock-heroes';
 })
 export class HeroDetailComponent implements OnInit {
   
-  heroes = HEROES;
   @Input() hero: Hero;
 
   constructor() { }
