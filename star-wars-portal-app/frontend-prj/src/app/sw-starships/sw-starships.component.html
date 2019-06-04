@@ -1,0 +1,18 @@
+<h2>Ships</h2>
+<ul class="localShips">
+  <li *ngFor="let ships of localShips" 
+  [class.selected]="ships === selectedShip"
+  (click)="onSelect(ships)">
+    <span class="badge">{{ships.id}}</span> {{ships.starshipName}}
+  </li>
+</ul>
+ 
+<div *ngIf="selectedCharacter">
+  <h2>{{selectedCharacter.characterName}} Details</h2>
+  <div><span>Species: </span>{{selectedCharacter.characterSpecies}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedCharacter.characterName" placeholder="name"/>
+    </label>
+  </div>
+</div>

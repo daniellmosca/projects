@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "5d9c6c1c-7e5d-4c56-a398-c3126c9a649c",
+		"name": "requestsWillBeSent",
+		"description": "Collection for testing the star wars web app server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ItemsList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "List everything from db"
+			},
+			"response": []
+		},
+		{
+			"name": "CharDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/starwars/characterDetails",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"starwars",
+						"characterDetails"
+					]
+				},
+				"description": "get char details"
+			},
+			"response": []
+		},
+		{
+			"name": "StarshipDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/starwars/starshipDetails",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"starwars",
+						"starshipDetails"
+					]
+				},
+				"description": "get starshipdetails"
+			},
+			"response": []
+		}
+	]
+}
